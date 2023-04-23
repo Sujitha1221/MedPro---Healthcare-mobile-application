@@ -56,7 +56,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         medi.setOnClickListener {
-            startActivity(Intent(this, UpdateActivity::class.java))
+            startActivity(Intent(this, MedicineActivity::class.java))
         }
 
 
