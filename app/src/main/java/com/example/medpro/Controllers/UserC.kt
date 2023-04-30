@@ -1,19 +1,14 @@
-package com.example.medpro.Database
+package com.example.medpro.Controllers
 
-import android.R.id
 import android.content.ContentValues
 import android.content.Context
-import android.content.Intent
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import android.text.Editable
-import androidx.appcompat.app.AlertDialog
-import com.example.medpro.MainActivity
 import com.example.medpro.Models.User
 
 
-public class Database(
+public class UserC(
     context: Context?,
     name: String?,
     factory: SQLiteDatabase.CursorFactory?,
@@ -31,6 +26,8 @@ public class Database(
         if (db != null) {
             db.execSQL(query1)
         }
+
+
 
     }
 
@@ -112,7 +109,7 @@ public class Database(
 
     }
 
-    fun updateProfile(user:User):Boolean{
+    fun updateProfile(user: User):Boolean{
         var db:SQLiteDatabase = this.writableDatabase
         var id = user.id
         val query = "SELECT * FROM Users"
@@ -134,7 +131,7 @@ public class Database(
 
     }
 
-    fun delete(user:User): Boolean {
+    fun delete(user: User): Boolean {
         var s:Boolean = false
         var id = user.id
         val where = "id=$id"

@@ -9,7 +9,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.medpro.API.MailApi
-import com.example.medpro.Database.Database
 import com.example.medpro.Models.User
 
 class RegisterActivity : AppCompatActivity() {
@@ -120,7 +119,7 @@ class RegisterActivity : AppCompatActivity() {
             user.phone = phone.text.toString()
             user.password = password.text.toString()
             var repassword = repassword.text.toString()
-            var db = Database(applicationContext,"Medpro",null,1)
+            var db = com.example.medpro.Controllers.UserC(applicationContext,"Medpro",null,1)
 
             if(user.fullname.isEmpty() || user.email.isEmpty() ||user. phone.isEmpty() || user.password.isEmpty() || repassword.isEmpty()){
                 Toast.makeText(applicationContext, "Fields can't be empty", Toast.LENGTH_LONG).show()

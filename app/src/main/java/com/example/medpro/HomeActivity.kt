@@ -12,11 +12,11 @@ import android.widget.Toast
 import androidx.cardview.widget.CardView
 
 class HomeActivity : AppCompatActivity() {
-    lateinit var profile: CardView
-    lateinit var article: CardView
-    lateinit var logout: Button
-    lateinit var check: CardView
-    lateinit var medi: CardView
+    private lateinit var profile: CardView
+    private lateinit var article: CardView
+    private lateinit var logout: Button
+    private lateinit var check: CardView
+    private lateinit var medi: CardView
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +30,7 @@ class HomeActivity : AppCompatActivity() {
 
         val sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE)
         val email = sharedPreferences.getString("email", "").toString()
-        Toast.makeText(applicationContext, "Welcome ${email}!!!", Toast.LENGTH_LONG)
+        Toast.makeText(applicationContext, "Welcome ${email}!!!", Toast.LENGTH_LONG).show()
 
         profile.setOnClickListener {
             val intent = Intent(this, UserProfileActivity::class.java)

@@ -7,8 +7,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.example.medpro.Database.Database
-import com.example.medpro.Models.User
 
 class UpdateActivity : AppCompatActivity() {
     lateinit var home: Button
@@ -26,13 +24,13 @@ class UpdateActivity : AppCompatActivity() {
         phone = findViewById(R.id.Up_Phone)
         password = findViewById(R.id.Up_Password)
         update = findViewById(R.id.btnUpdate)
-        var db = Database(applicationContext, "Medpro", null, 1)
+        var db = com.example.medpro.Controllers.UserC(applicationContext, "Medpro", null, 1)
 
         val sharedPreferences = getSharedPreferences("shared_prefs", MODE_PRIVATE)
         val e = sharedPreferences.getString("email", "").toString()
         val x = db.getId(e)
 
-        var a: User = db.profile(e)
+        var a: com.example.medpro.Models.User = db.profile(e)
 
         name.setText(a.fullname)
         phone.setText(a.phone)

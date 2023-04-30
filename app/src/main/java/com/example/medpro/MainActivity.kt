@@ -9,7 +9,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.medpro.Database.Database
+import com.example.medpro.Controllers.UserC
 import com.example.medpro.Models.User
 
 class MainActivity : AppCompatActivity() {
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             var user = User()
             user.email = email.text.toString()
             user.password = password.text.toString()
-            var db = Database(applicationContext,"Medpro",null,1)
+            var db = UserC(applicationContext,"Medpro",null,1)
 
             if(user.email.isEmpty() || user.password.isEmpty()){
                 Toast.makeText(applicationContext, "Fields can't be empty", Toast.LENGTH_LONG).show()

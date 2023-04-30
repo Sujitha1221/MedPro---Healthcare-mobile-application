@@ -1,19 +1,14 @@
 package com.example.medpro
 
-import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract.CommonDataKinds.Phone
-import android.text.InputType
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import androidx.cardview.widget.CardView
-import com.example.medpro.Database.Database
+import com.example.medpro.Controllers.UserC
+
 
 
 class UserProfileActivity : AppCompatActivity() {
@@ -35,7 +30,7 @@ class UserProfileActivity : AppCompatActivity() {
         phone = findViewById(R.id.My_Phone)
         password = findViewById(R.id.My_Password)
         delete = findViewById(R.id.btnDelete)
-        var db = Database(applicationContext, "Medpro", null, 1)
+        var db = UserC(applicationContext, "Medpro", null, 1)
 
         val sharedPreferences = getSharedPreferences("shared_prefs", MODE_PRIVATE)
         val e = sharedPreferences.getString("email", "").toString()
