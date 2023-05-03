@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:viewBindingIgnore="true"
@@ -25,12 +27,24 @@
             android:layout_marginRight="5dp"
             app:srcCompat="@drawable/m" />
 
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btn_marginLeft"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="@dimen/btn_marginRight"
+            android:layout_marginBottom="@dimen/btn_marginBottom"
+            android:backgroundTint="@color/Sub"
+            android:text="@string/btn_Home"
+            android:textStyle="bold" />
+
         <ImageView
             android:id="@+id/healthArticles"
             android:layout_width="350dp"
             android:layout_height="118dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:layout_marginBottom="20dp"
             android:layout_marginRight="5dp"
             app:srcCompat="@drawable/hs" />

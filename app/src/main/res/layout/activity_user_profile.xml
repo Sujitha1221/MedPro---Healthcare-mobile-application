@@ -126,41 +126,54 @@
         android:textAlignment="viewStart"
         android:textColorHint="?android:attr/textColorHint" />
 
-    <Button
-        android:id="@+id/btnClickUpdate"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/btn_marginLeft"
-        android:layout_marginTop="@dimen/btn_marginTop"
-        android:layout_marginRight="@dimen/btn_marginRight"
-        android:layout_marginBottom="0dp"
-        android:backgroundTint="@color/Sub"
-        android:text="@string/btn_ClickUpdate"
-        android:textStyle="bold" />
+        android:layout_height="match_parent">
 
 
-    <Button
-        android:id="@+id/btnDelete"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/btn_marginLeft"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="@dimen/btn_marginRight"
-        android:layout_marginBottom="0dp"
-        android:backgroundTint="@color/Sub"
-        android:text="@string/btn_Delete"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnClickUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/Sub"
+            android:text="@string/btn_ClickUpdate"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btnHome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/btn_marginLeft"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="@dimen/btn_marginRight"
-        android:layout_marginBottom="@dimen/btn_marginBottom"
-        android:backgroundTint="@color/Sub"
-        android:text="@string/btn_Home"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/Sub"
+            android:text="@string/btn_Delete"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnClickUpdate"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="@color/Sub"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.644" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

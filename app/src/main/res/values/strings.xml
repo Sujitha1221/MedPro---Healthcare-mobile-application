@@ -13,8 +13,8 @@
     <string name="Logout">Logout</string>
     <string name="Appointments">Bookings</string>
     <string name="My_Profile">My Profile</string>
-    <string name="btn_ClickUpdate">Update Account</string>
-    <string name="btn_Delete">Delete Account</string>
+    <string name="btn_ClickUpdate">Update</string>
+    <string name="btn_Delete">Delete</string>
     <string name="Update_Account">Update Account</string>
     <string name="btn_Update">Update</string>
     <string name="btn_Home">BACK TO HOME</string>

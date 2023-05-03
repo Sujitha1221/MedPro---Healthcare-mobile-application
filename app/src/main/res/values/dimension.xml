@@ -7,6 +7,8 @@
     <dimen name="textbox_marginBottom" >10dp</dimen>
     <dimen name="btn_marginLeft">100dp</dimen>
     <dimen name="btn_marginRight">100dp</dimen>
+    <dimen name="marginLeft">150dp</dimen>
+    <dimen name="marginRight">150dp</dimen>
     <dimen name="btn_marginTop">15dp</dimen>
     <dimen name="btn_marginBottom">5dp</dimen>
 </resources>

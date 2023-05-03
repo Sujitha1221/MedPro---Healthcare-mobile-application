@@ -26,9 +26,6 @@ public class UserC(
         if (db != null) {
             db.execSQL(query1)
         }
-
-
-
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
