@@ -36,6 +36,8 @@ class HomeActivity : AppCompatActivity() {
         mylabs = findViewById(R.id.cardMyLabs)
         cart = findViewById(R.id.cardCart)
 
+
+
         val sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE)
         val email = sharedPreferences.getString("email", "").toString()
         Toast.makeText(applicationContext, "Welcome ${email}!!!", Toast.LENGTH_LONG).show()
