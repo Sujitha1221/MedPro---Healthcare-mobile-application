@@ -31,7 +31,7 @@ class RegisterActivity : AppCompatActivity() {
         phone = findViewById(R.id.edtPhone)
         password = findViewById(R.id.edtPassword)
         repassword = findViewById(R.id.edtRePassword)
-        submit = findViewById(R.id.btnSubmit)
+        submit = findViewById(R.id.btnSubmit1)
 
 
         login.setOnClickListener {

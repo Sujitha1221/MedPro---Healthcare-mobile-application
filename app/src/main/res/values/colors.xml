@@ -10,4 +10,7 @@
 <color name="Main">#1697AF</color>
 <color name="Sub">#0A5DCE</color>
 <color name="Tint">#90e2f1</color>
+
+    <color name="button">#29413E</color>
+    <color name="blue">#0E1224</color>
 </resources>

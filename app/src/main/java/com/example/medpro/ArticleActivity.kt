@@ -14,6 +14,7 @@ class ArticleActivity : AppCompatActivity() {
     private lateinit var mySearchView: SearchView
     lateinit var myList: ListView
     lateinit var list: ArrayList<String>
+    lateinit var home:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +22,13 @@ class ArticleActivity : AppCompatActivity() {
 
             mySearchView = findViewById(R.id.sv)
             myList = findViewById(R.id.myList)
+        home = findViewById(R.id.btnHome)
+
+        home.setOnClickListener{
+            val intent= Intent(this,HomeActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
 
             var list: ArrayList<String> = ArrayList()

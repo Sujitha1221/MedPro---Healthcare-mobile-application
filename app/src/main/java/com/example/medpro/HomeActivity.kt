@@ -15,8 +15,12 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var profile: CardView
     private lateinit var article: CardView
     private lateinit var logout: Button
-    private lateinit var check: CardView
     private lateinit var medi: CardView
+    private lateinit var doc:CardView
+    private lateinit var lab:CardView
+    private lateinit var appointments: CardView
+    private lateinit var mylabs: CardView
+    private lateinit var cart: CardView
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,8 +29,12 @@ class HomeActivity : AppCompatActivity() {
         profile = (findViewById(R.id.cardMyProfile))
         logout = findViewById(R.id.lout)
         article = findViewById(R.id.cardArticles)
-        check = findViewById(R.id.cardDoctor)
         medi = findViewById(R.id.cardMedicine)
+        doc = findViewById(R.id.cardDoctor)
+        lab = findViewById(R.id.cardLabTest)
+        appointments = findViewById(R.id.cardAppointment)
+        mylabs = findViewById(R.id.cardMyLabs)
+        cart = findViewById(R.id.cardCart)
 
         val sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE)
         val email = sharedPreferences.getString("email", "").toString()
@@ -49,14 +57,29 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, ArticleActivity::class.java))
         }
 
-        check.setOnClickListener {
-            val intent = Intent(this, ShippingActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
         medi.setOnClickListener {
             startActivity(Intent(this, MedicineActivity::class.java))
+        }
+
+        doc.setOnClickListener{
+            startActivity(Intent(this, DoctorActivity::class.java))
+        }
+
+        lab.setOnClickListener{
+            startActivity(Intent(this, LabActivity::class.java))
+
+        }
+
+        appointments.setOnClickListener{
+            startActivity(Intent(this, AllAppointments::class.java))
+        }
+
+        mylabs.setOnClickListener{
+            startActivity(Intent(this, MyLabs::class.java))
+        }
+
+        cart.setOnClickListener{
+            startActivity(Intent(this, Cart::class.java))
         }
 
 

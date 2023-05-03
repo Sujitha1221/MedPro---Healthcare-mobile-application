@@ -25,6 +25,27 @@
 
     <string name="Shipping">Shipping Details</string>
     <string name="btnPay">SUBMIT</string>
+
+    <string name="DoctorsPanel">All Doctors</string>
+    <string name="familyPhysician">Family Doctor</string>
+    <string name="cardio">Cardiologists</string>
+    <string name="dietician">Dieticians</string>
+    <string name="dentist">Dentists</string>
+    <string name="back">Back</string>
+    <string name="appointmets">My Appointments</string>
+    <string name="checkout">Proceed to Checkout</string>
+    <string name="timeSelection">Select Time</string>
+    <string name="dateSelection">Select Date</string>
+    <string name="home">Back To Home</string>
+    <string name="title_activity_lab">LabActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>
 
 

@@ -3,7 +3,6 @@ package com.example.medpro
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -22,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        register = findViewById(R.id.btnSubmit)
+        register = findViewById(R.id.btnSubmit1)
         login = findViewById(R.id.btnLogin)
         email = findViewById(R.id.edtFullname)
         password = findViewById(R.id.edtPassword)
